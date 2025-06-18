@@ -5,3 +5,4 @@ authors = ["Microindole <1513979779@qq.com>"]
 edition = "2024"
 
 [dependencies]
+rand = "^0.9.1"
