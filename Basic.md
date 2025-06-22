@@ -114,3 +114,45 @@ let x = x + 1;
 > 使用隐藏 let 声明的新变量类型可以和原变量不一样
 
 ##### 数据类型：标量类型
+```rust
+    println!("Hello, world!");
+    let mut x = 5;
+    println!{"x = {}",x};
+
+    x = 6;
+
+
+    println!{"x = {}",x};
+    let x = "    ";
+    let x = x.len();
+    println!("x = {}",x);
+    println!("MAX_POINTS = {}", MAX_POINTS);
+```
+
+> 如果parse()可能的类型比较多(例如吧String转为整数的parse方法), 就必须添加类型标注，否则编译会报错
+```rust
+let guess:u32 = "42".parse().expect("Not a number!");
+``` 
+ - [ x ]
+```rust
+let guess = "42".parse().expect("not a num ")
+```
+- 整数类型: 
+- - u32, i32等(32表示占据32位的空间)
+- - usize, isize: 根据计算机类型判断
+---
+ - - 整数字面值
+ - - > 98_222, 0xff, 0o77, 0b11_00, b'A'(Byte类型)
+ - - > 允许使用类型作为后缀
+ - 整数溢出
+ - 浮点类型
+ - - f32, f64(默认)
+
+ - 布尔类型
+ - > bool  true false
+ - 字符类型
+ - > 'a'
+   > 占4个字节大小，是Unicode的标量值
+
+
+##### 数据类型：复合类型
